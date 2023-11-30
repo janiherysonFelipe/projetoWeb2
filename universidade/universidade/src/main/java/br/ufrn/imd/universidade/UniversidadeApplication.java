@@ -1,5 +1,6 @@
 package br.ufrn.imd.universidade;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class UniversidadeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UniversidadeApplication.class, args);
+		SpringApplication.run( UniversidadeApplication.class, args);
 	}
 
 }
