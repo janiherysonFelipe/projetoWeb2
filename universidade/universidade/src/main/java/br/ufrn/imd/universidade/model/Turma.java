@@ -1,11 +1,13 @@
 package br.ufrn.imd.universidade.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
+
+import java.util.List;
 
 @Table(name = "turma")
 @Entity(name = "Turma")
