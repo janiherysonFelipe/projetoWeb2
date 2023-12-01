@@ -1,12 +1,14 @@
 package imd.ufrn.universidade_ufrn.model.entity;
 
 import imd.ufrn.universidade_ufrn.model.DTO.AtualizarCursoDTO;
+import imd.ufrn.universidade_ufrn.service.AlunoService;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -19,6 +21,7 @@ import java.util.List;
 public class Curso {
 
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCurso;
@@ -28,6 +31,7 @@ public class Curso {
     private int cargaHoraria;
 
     @OneToMany(mappedBy = "curso") //Um curso tem muitos alunos
+
     private List<Aluno> alunos;
 
 
@@ -44,7 +48,6 @@ public class Curso {
             this.cargaHoraria = dados.cargaHoraria();
         }
     }
-
 
 
 

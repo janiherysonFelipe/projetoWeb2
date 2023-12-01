@@ -4,7 +4,7 @@ package imd.ufrn.universidade_ufrn.model.DTO;
 import imd.ufrn.universidade_ufrn.model.entity.Curso;
 import jakarta.validation.constraints.NotNull;
 
-import java.util.Date;
+import java.time.LocalDate;
 public record AtualizarAlunoDTO(
         @NotNull
         Long id,
@@ -12,6 +12,6 @@ public record AtualizarAlunoDTO(
         String nomeAluno,
         String cpf,
         String telefone,
-        Date nascimento) {
+        LocalDate nascimento) {
 
 }

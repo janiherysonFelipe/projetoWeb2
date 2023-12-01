@@ -1,4 +1,11 @@
 package imd.ufrn.universidade_ufrn.model.DTO;
 
-public record AtualizarFaculdadeDTO(String FaculdadeCol, String nomeFaculdade, String descricao, String area) {
+import jakarta.validation.constraints.NotNull;
+
+public record AtualizarFaculdadeDTO(
+        @NotNull
+        Long id,
+        String nomeFaculdade,
+        String descricao,
+        String area) {
 }

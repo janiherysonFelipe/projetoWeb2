@@ -35,7 +35,7 @@ public class InstituicaoController {
     public ResponseEntity<Instituicao> salvar(@Valid @RequestBody Instituicao instituicao) {
         Instituicao novaInstituicao = instituicaoService.salvar(instituicao);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-                .buildAndExpand(novaInstituicao.getId()).toUri();
+                .buildAndExpand(novaInstituicao.getIdInstituicao()).toUri();
         return ResponseEntity.created(uri).body(novaInstituicao);
     }
 

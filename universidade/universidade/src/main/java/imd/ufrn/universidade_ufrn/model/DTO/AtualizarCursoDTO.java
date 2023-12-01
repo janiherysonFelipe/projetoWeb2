@@ -6,8 +6,9 @@ import jakarta.validation.constraints.NotNull;
 import java.util.List;
 
 public record AtualizarCursoDTO(
+
         @NotNull
-        Long idFaculdade,
+        Long id,
         String nomeCurso,
         int cargaHoraria){
 }

@@ -1,6 +1,6 @@
 package imd.ufrn.universidade_ufrn.service;
 
-import imd.ufrn.universidade_ufrn.model.DTO.AtualizarAlunoDTO;
+import imd.ufrn.universidade_ufrn.model.DTO.AtualizarCursoDTO;
 import imd.ufrn.universidade_ufrn.model.entity.Aluno;
 import imd.ufrn.universidade_ufrn.model.entity.Curso;
 import imd.ufrn.universidade_ufrn.repository.CursoRepository;
@@ -16,5 +16,46 @@ public class CursoService {
 
     @Autowired
     CursoRepository repository;
+
+    @Autowired
+    AlunoService aluno;
+
+
+    public ResponseEntity cadastrarCurso (Curso curso){
+        repository.save(new Curso(curso));
+        return  ResponseEntity.noContent().build();
+    }
+
+    public void salvarAlunosPassados(List<Aluno> alunos){
+        if(alunos != null){
+            aluno.salvarAlunosSeparadamente(alunos);
+        }
+
+    }
+    //Excluir um aluno da tabela pelo seu ID
+    @Transactional
+    public ResponseEntity deletarCurso(Long id){
+        if(id == null){
+            return ResponseEntity.badRequest().build();
+        }
+        repository.deleteById(id);
+        return  ResponseEntity.noContent().build();
+    }
+
+
+    public List<Curso> listarCursos(){
+        return  repository.findAll();
+    }
+
+    @Transactional
+    public ResponseEntity atualizarCurso(AtualizarCursoDTO dados) {
+        if(dados.id() == null){
+            return ResponseEntity.badRequest().build();
+        }
+        Curso curso = repository.getReferenceById(dados.id());
+        curso.atualizarCurso(dados);
+        return ResponseEntity.ok().build();
+
+    }
 
 }

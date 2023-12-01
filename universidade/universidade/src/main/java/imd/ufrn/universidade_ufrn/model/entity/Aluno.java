@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.validator.constraints.br.CPF;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Table(name = "aluno")
 @Entity
@@ -33,7 +33,7 @@ public class Aluno {
     @CPF
     private String cpf;
     private String telefone;
-    private Date nascimento;
+    private LocalDate nascimento;
 
     public Aluno(Aluno aluno) {
         this.curso = aluno.getCurso();

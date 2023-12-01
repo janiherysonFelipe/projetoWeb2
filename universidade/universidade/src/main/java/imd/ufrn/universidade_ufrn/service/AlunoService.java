@@ -22,6 +22,13 @@ public class AlunoService {
         return  ResponseEntity.noContent().build();
     }
 
+    @Transactional
+    public void salvarAlunosSeparadamente(List<Aluno> alunos) {
+        for (Aluno aluno : alunos) {
+            repository.save(aluno);
+        }
+    }
+
     //Excluir um aluno da tabela pelo seu ID
     @Transactional
     public ResponseEntity deletarAluno(Long id){
