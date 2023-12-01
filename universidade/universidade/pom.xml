@@ -8,11 +8,11 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.ufrn.imd</groupId>
-	<artifactId>universidade</artifactId>
+	<groupId>imd.ufrn</groupId>
+	<artifactId>universidade_ufrn</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>universidade</name>
-	<description>Projeto do gripo g3 (Ielber, Wagner e Felipe)</description>
+	<name>universidade_ufrn</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -23,23 +23,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-mysql</artifactId>
 		</dependency>
 
 		<dependency>
