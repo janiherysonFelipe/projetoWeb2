@@ -1,8 +1,6 @@
 package imd.ufrn.universidade_ufrn.controller;
 
-import imd.ufrn.universidade_ufrn.model.entity.Disciplina;
-import imd.ufrn.universidade_ufrn.model.entity.Instituicao;
-import imd.ufrn.universidade_ufrn.service.DisciplinaService;
+import imd.ufrn.universidade_ufrn.model.Instituicao;
 import imd.ufrn.universidade_ufrn.service.InstituicaoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

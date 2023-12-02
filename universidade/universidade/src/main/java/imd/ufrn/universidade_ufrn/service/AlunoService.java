@@ -1,7 +1,7 @@
 package imd.ufrn.universidade_ufrn.service;
 
-import imd.ufrn.universidade_ufrn.model.DTO.AtualizarAlunoDTO;
-import imd.ufrn.universidade_ufrn.model.entity.Aluno;
+import imd.ufrn.universidade_ufrn.DTO.AtualizarAlunoDTO;
+import imd.ufrn.universidade_ufrn.model.Aluno;
 import imd.ufrn.universidade_ufrn.repository.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

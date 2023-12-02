@@ -1,7 +1,7 @@
 package imd.ufrn.universidade_ufrn.controller;
 
-import imd.ufrn.universidade_ufrn.model.DTO.AtualizarCursoDTO;
-import imd.ufrn.universidade_ufrn.model.entity.Curso;
+import imd.ufrn.universidade_ufrn.DTO.AtualizarCursoDTO;
+import imd.ufrn.universidade_ufrn.model.Curso;
 import imd.ufrn.universidade_ufrn.service.CursoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

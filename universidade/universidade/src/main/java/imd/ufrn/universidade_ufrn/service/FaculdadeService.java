@@ -1,11 +1,7 @@
 package imd.ufrn.universidade_ufrn.service;
 
-import imd.ufrn.universidade_ufrn.model.DTO.AtualizarCursoDTO;
-import imd.ufrn.universidade_ufrn.model.DTO.AtualizarFaculdadeDTO;
-import imd.ufrn.universidade_ufrn.model.entity.Aluno;
-import imd.ufrn.universidade_ufrn.model.entity.Curso;
-import imd.ufrn.universidade_ufrn.model.entity.Faculdade;
-import imd.ufrn.universidade_ufrn.repository.CursoRepository;
+import imd.ufrn.universidade_ufrn.DTO.AtualizarFaculdadeDTO;
+import imd.ufrn.universidade_ufrn.model.Faculdade;
 import imd.ufrn.universidade_ufrn.repository.FaculdadeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
 package imd.ufrn.universidade_ufrn.service;
 
-import imd.ufrn.universidade_ufrn.model.entity.Disciplina;
+import imd.ufrn.universidade_ufrn.model.Disciplina;
 import imd.ufrn.universidade_ufrn.repository.DisciplinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
